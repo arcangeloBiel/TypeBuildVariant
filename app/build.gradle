@@ -17,38 +17,38 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
     flavorDimensions += "version"
+    //flavorDimensions += listOf("api", "mode")
+
     productFlavors {
         create("dev") {
             dimension "version"
             applicationIdSuffix = ".dev"
             versionNameSuffix = "-dev"
+            versionCode = 30000  + (android.defaultConfig.versionCode ?: 0)
         }
 
         create("stage") {
             dimension "version"
             applicationIdSuffix = ".stage"
             versionNameSuffix = "-stage"
+            versionCode = 30000  + (android.defaultConfig.versionCode ?: 0)
         }
 
         create("apps")  {
             dimension "version"
             applicationIdSuffix = ".apps"
             versionNameSuffix = "-apps"
-//            versionCode 1
-//            versionName "1.0"
+            versionCode = 20000  + (android.defaultConfig.versionCode ?: 0)
         }
     }
     buildTypes {
         debug {
             applicationIdSuffix ".debug"
-            versionNameSuffix "-debug"
+            versionNameSuffix "-dev"
         }
 
-        beta {
-            applicationIdSuffix ".beta"
-            versionNameSuffix "-beta"
-        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
