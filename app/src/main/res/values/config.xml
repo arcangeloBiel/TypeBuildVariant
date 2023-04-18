@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="API_DEV" translatable="false">https://dev.com.br/</string>
+    <string name="API_STAGE" translatable="false">https://stage.com.br/</string>
+    <string name="API_PROD" translatable="false">https://prod.com.br/</string>
+</resources>
