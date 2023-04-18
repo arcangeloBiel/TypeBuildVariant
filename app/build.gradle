@@ -17,12 +17,44 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
+    flavorDimensions += "version"
+    productFlavors {
+        create("dev") {
+            dimension "version"
+            applicationIdSuffix = ".dev"
+            versionNameSuffix = "-dev"
+        }
+
+        create("stage") {
+            dimension "version"
+            applicationIdSuffix = ".stage"
+            versionNameSuffix = "-stage"
+        }
+
+        create("apps")  {
+            dimension "version"
+            applicationIdSuffix = ".apps"
+            versionNameSuffix = "-apps"
+//            versionCode 1
+//            versionName "1.0"
+        }
+    }
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-debug"
+        }
+
+        beta {
+            applicationIdSuffix ".beta"
+            versionNameSuffix "-beta"
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
