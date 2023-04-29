@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+
+    style="@style/prazo_hoje_badge"
+    android:clickable="false"
+    android:text="setor_badge"
+    android:visibility="visible"/>
+<!--    android:id="@+id/local_estoque_inventario_badge"-->

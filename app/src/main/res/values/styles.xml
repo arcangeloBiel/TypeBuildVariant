@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Inventario -->
+    <style name="inventario_badge_button">
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd">8dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:radius">10dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="setor_badge" parent="inventario_badge_button">
+        <item name="android:backgroundTint">#FF9B00</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="prazo_maximo_badge" parent="inventario_badge_button">
+        <item name="android:backgroundTint">#28A745</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="prazo_medio_badge" parent="inventario_badge_button">
+        <item name="android:backgroundTint">#D84E00</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="prazo_minimo_badge" parent="inventario_badge_button">
+        <item name="android:backgroundTint">#D84E00</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="prazo_hoje_badge" parent="inventario_badge_button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:backgroundTint">#184FA1</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:drawableLeft">@drawable/ic_relogio</item>
+        <!--        <item name="android:text">HOJE</item>-->
+        <!--        <item name="android:textAlignment">center</item>-->
+        <!--        <item name="android:textAllCaps">true</item>-->
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="txt_padrao_inventario">
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+
+    <style name="txt_padrao_inventario_max_size" parent="txt_padrao_inventario">
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="txt_padrao_inventario_max_size_14sp" parent="txt_padrao_inventario_max_size">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="txt_padrao_inventario_max_size_14sp_400w" parent="txt_padrao_inventario_max_size_14sp">
+        <item name="fontWeight">400</item>
+    </style>
+
+    <style name="txt_padrao_inventario_max_size_14sp_500w" parent="txt_padrao_inventario_max_size_14sp">
+        <item name="fontWeight">500</item>
+    </style>
+
+    <style name="txt_padrao_inventario_max_size_14sp_600w" parent="txt_padrao_inventario_max_size_14sp">
+        <item name="fontWeight">600</item>
+    </style>
+
+    <style name="txt_alternativo_inventario_max_size_14sp_500w" parent="txt_padrao_inventario_max_size_14sp">
+        <item name="fontWeight">500</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">#FF3700B3</item>
+        <item name="tabSelectedTextColor">#FF3700B3</item>
+        <item name="tabIndicatorFullWidth">false</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabPaddingStart">6dp</item>
+        <item name="tabPaddingEnd">6dp</item>
+        <item name="tabTextAppearance">@style/AppTabTextAppearance</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">12sp</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="CodigoBarrasTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="strokeWidth">2sp</item>
+
+    </style>
+
+</resources>

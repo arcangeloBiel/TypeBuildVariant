@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewItemInventarioRotativoAtendimentoLido"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="3dp"
+    android:elevation="10sp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:orientation="horizontal"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="fill"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:adjustViewBounds="true"
+        android:elevation="16dp"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+
+        <TextView
+            android:id="@+id/txt_codigo_inventario_Alocado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:letterSpacing="0.015"
+            android:text="codigo"
+            android:textColor="@color/black"
+            android:textFontWeight="500"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/container_badges"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:clickable="false"
+            android:divider="@drawable/divisor_badge"
+            android:dividerPadding="8dp"
+            android:orientation="horizontal"
+            android:showDividers="middle"
+            app:layout_constraintEnd_toEndOf="@+id/txt_descicao_inventario_alocado"
+            app:layout_constraintStart_toStartOf="@+id/txt_descicao_inventario_alocado"
+            app:layout_constraintTop_toBottomOf="@+id/txt_codigo_inventario_Alocado">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_descicao_inventario_alocado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="end"
+            android:letterSpacing="0.03"
+            android:maxLines="1"
+            android:text="descricao"
+            android:textColor="@color/cardview_dark_background"
+            android:textFontWeight="400"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/btn_iniciar_inventario"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/container_badges"
+            />
+
+
+        <ImageView
+            android:id="@+id/btn_iniciar_inventario"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="seta_para_esquerda_descricao"
+            android:padding="16dp"
+            android:src="@drawable/ic_seta_direita_minimalista_azul"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
